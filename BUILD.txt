@@ -1,0 +1,29 @@
+COSMOS development on Mac OSX
+-----------------------------
+
+1. Install homebrew
+2. Install rbenv and ruby-build
+   brew install rbenv
+   brew install ruby-build
+3. Init ruby environment by adding to shell profile
+   eval "$(rbenv init -)"
+4. Install ruby
+   CONFIGURE_OPTS="--enable-shared" rbenv install 2.2.0
+5. Set to use the installed ruby
+   rbenv global 2.2.2
+6. Install bundle
+   gem install bundle
+7. Verify bundle
+   which bundle
+   --> /Users/imvuong/.rbenv/shims/bundle
+8. Install ruby depenencies for COSMOS
+   cd COSMOS
+   bundle install
+9. Build COSMOS
+   cd COSMOS
+   rake build
+10. Now you can setup COSMOS inside IntelliJ with Ruby Plugin.  Run configuration
+   Ruby script: COSMOS/demo/Launcher
+   Working directory: COSMOS/demo
+   Environment variables: COSMOS_DEVEL=true
+
