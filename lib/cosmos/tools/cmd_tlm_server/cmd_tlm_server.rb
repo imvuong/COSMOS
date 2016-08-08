@@ -507,6 +507,7 @@ module Cosmos
     # @param packet [Packet] Packet which has been identified by the interface
     def identified_packet_callback(packet)
       packet.check_limits(System.limits_set)
+
       post_packet(packet)
     end
 

@@ -103,7 +103,7 @@ module Cosmos
             "font-size:#{config.tool_font_settings[1]}px"
           label.setStyleSheet(stylesheet)
           label.wordWrap = true
-          label.setFixedWidth(70)
+          label.setFixedWidth(100)
           label.setSizePolicy(Qt::SizePolicy::Fixed, Qt::SizePolicy::Fixed)
           label.setMinimumSize(label.sizeHint)
           label.setAlignment(Qt::AlignHCenter)

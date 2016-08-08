@@ -101,7 +101,6 @@ module Cosmos
       @write_count += 1
       command_data = packet.buffer
       @bytes_written += command_data.length
-
       identified_command = System.commands.identify(command_data, ['COSMOS'])
       if identified_command
         case identified_command.packet_name

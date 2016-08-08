@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'cosmos'
 require 'benchmark/ips'
 require 'memory_profiler'

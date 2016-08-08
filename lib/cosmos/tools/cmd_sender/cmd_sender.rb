@@ -369,6 +369,7 @@ module Cosmos
       begin
         target_name = @target_select.text
         packet_name = @cmd_select.text
+
         if target_name and packet_name
           output_string, params = view_as_script()
           @message_log.write(Time.now.formatted + '  ' + output_string + "\n")
